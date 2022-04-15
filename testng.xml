@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+  
+  <test thread-count="5" name="Test">
+  	<parameter name="Path"       value="src/main/java/scenarios/hubspot_scenarios.xlsx"/>
+  	<parameter name="OutputPath" value="src/main/java/scenarios/hubspot_scenarios_output.xlsx"/>
+    <parameter name="SheetName"  value="Test 1"/>
+  
+    <classes>
+      <class name="Tests.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
